@@ -6,8 +6,7 @@ SELECT rezepte.rezeptname,
  rezepte_zutaten.zutatenmenge * Zutaten.Proteine AS Proteine,
  rezepte_zutaten.zutatenmenge * Zutaten.Proteine AS Kohlenhydrahte,
  rezepte_zutaten.zutatenmenge * Zutaten.Fett AS Fett,
- rezepte_zutaten.zutatenmenge * Zutaten.Balaststoffe AS Balaststoffe,
- Zutaten.Allergene
+ rezepte_zutaten.zutatenmenge * Zutaten.Balaststoffe AS Balaststoffe
 FROM (
 (rezepte_zutaten
 INNER JOIN rezepte ON rezepte_zutaten.rid = rezepte.rid)
